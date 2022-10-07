@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+     <!--항상 리셋 css파일이 가장 위에 링크되어 있어야 함-->
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+
+    <script>
+      $(function(){
+        $("ul.panel li:not("+$("ul.tab li a.selected").attr("href")+")").hide();
+
+$("ul.tab li a").click(function(){
+$("ul.tab li a").removeClass("selected");
+$(this).addClass("selected");
+$("ul.panel li").hide();
+$($(this).attr("href")).show();
+return false;
+});
+
+      });
+    </script>
+    
+</head>
+<body>
+<header id="header">
+  <h1>STARSHIP ENT SITE RENEWAL DETAIL PAGE</h1>
+</header>
+
+  <div id="container">
+    <ul class="tab">
+    <li><a href="#tab1" class="selected">기획의도</a></li>
+    <li><a href="#tab2">사이트분석</a></li>
+    <li><a href="#tab3">와이어 프레임</a></li>
+    <li><a href="#tab4">스타일 가이드</a></li>
+    </ul>
+ 
+ 
+    <ul class="panel">
+    <li id="tab1">
+        <div class="info cf">
+         <img src="profile/ex03.png" alt="기획의도">
+         <img src="profile/ex05.png" alt="컨셉목표">
+        </div>
+      
+       
+       </li>
+       
+       <li id="tab2">
+          <img src="profile/site04.png" alt="사이트 분석">
+         </li>
+
+       <li id="tab3">
+       <img src="profile/wireframe01.jpg" alt="wire frame">
+       
+     </li>
+
+     <li id="tab4">
+     <img src="profile/styleguide.jpg" alt="스타일가이드">
+   </li>
+    </ul>
+  </div>
+</body>     
+</html>

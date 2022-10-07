@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+*,*:before,*:after {  box-sizing: border-box;}
+
+.aos-all {    width: 70%;    margin: 5rem auto; text-align: center; }
+.aos-item { display: inline-block; width: 48%;  
+            padding: 20px; text-align:center;}
+
+.aos-item img{width:90%;}   
+
+.aos-item_inner {width: 100%;  height: 100%; }
+ 
+ @media screen and (max-width: 800px) {
+            .aos-item {   width: 100%; }
+                  }
+                                   

@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+*,*:after,*:before {box-sizing: border-box;}
+a {text-decoration: none;}
+body {background-color: #fff;}
+
+.first {width: 100%;}

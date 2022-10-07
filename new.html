@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+     <!--항상 리셋 css파일이 가장 위에 링크되어 있어야 함-->
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+
+    <script>
+      $(function(){
+
+   $('.play').waypoint(function(){
+   $('.play').addClass('animated fadeInUp');
+   },{offset:'75%'});
+
+   $('.phone li').waypoint(function(){
+    $('.phone li').addClass('animated fadeInLeft');
+   },{offset:'85%'});
+});
+
+   
+    </script>
+    
+</head>
+<body>
+  <header id="header">
+    <h1>STARSHIP ENT SITE RENEWAL</h1>
+  </header>
+
+  <section id="p1">
+    <h2><img src="profile/title01.png" alt="title"></h2>
+    <article class="p1">
+      <img src="profile/icon.png" alt="기획의도 및 사이트분석" class="h1 animated fadeInUp">
+      <img src="profile/icon01.png" alt="arrow" class="h2 animated fadeInUp delay-05s">
+    </article>
+
+    <article class="p2">
+      <div class="play">
+      <img src="profile/monitor.png" alt="mockup">
+      <p>기존 스타쉽엔터테인먼트 사이트의 <br>
+        문제점 해결을 위해 사이트 리뉴얼 결정</p>
+      </div>
+    </article>
+
+    <hr>
+  </section>
+
+  <section id="p2">
+    <h2>
+      <img src="profile/title02.png" alt="title">
+    </h2>
+    <article class="p3">
+      <img src="profile/concept.png" alt="concept goal">
+    </article>
+
+    <hr>
+
+    <article class="p4">
+      <img src="profile/title03.png" alt="SWOT분석" class="title">
+      <img src="profile/swot.png" alt="swot" class="img1">
+    </article>
+
+    <hr>
+  </section>
+
+  <section id="p3">
+    <ul class="phone">
+      <li><a href="https://www.figma.com/file/C0GqWPfkoRPcdwFV12PCyT/%EB%B0%98%EC%9D%91%ED%98%95%EB%94%94%EC%9E%90%EC%9D%B8%EC%8B%9C%EC%95%88_main" target="_blank"><img src="profile/pp.png" alt="design draft"></a></li>
+      <li class="delay-05s"><a href="https://www.figma.com/file/C0GqWPfkoRPcdwFV12PCyT/%EB%B0%98%EC%9D%91%ED%98%95%EB%94%94%EC%9E%90%EC%9D%B8%EC%8B%9C%EC%95%88_main" target="_blank"><img src="profile/phone1.png" alt="design draft"></a></li>
+      <li class="delay-1s"><a href="https://www.figma.com/file/C0GqWPfkoRPcdwFV12PCyT/%EB%B0%98%EC%9D%91%ED%98%95%EB%94%94%EC%9E%90%EC%9D%B8%EC%8B%9C%EC%95%88_main" target="_blank"><img src="profile/phone02.png" alt="design draft"></a></li>
+    </ul>
+
+    <img src="profile/element.png" alt="스타일가이드" class="style">
+  </section>
+</body>     
+</html>

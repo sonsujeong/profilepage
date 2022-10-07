@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+
+*,*:after,*:before {box-sizing: border-box;}
+a {text-decoration: none;}
+body {background-color: #fff;}
+ #header{width: 100%;margin: 0 auto;}
+  #menu{width: 100%;margin: 0 auto;height: 170px;
+       position: relative;}
+  #menu h1 {margin-top: 28px;margin-left: 40px;width: 400px;
+      display: inline-block;}
+  #menu h1 img{width: 100%;}
+
+  #menu ul{display: flex;justify-content: left;
+      position: absolute;top:60px;left: 450px;}
+  #menu ul li {padding-right: 70px;}  
+  #menu ul li:last-child{padding-right: none;}   
+  #menu ul li a {color: #000;font-size: 1.3rem;font-weight: bold;}
+  #menu ul li a:hover {color:#FFC700;}
+  
+  
+.title {width: 80%;margin: 0 auto;text-align: center;
+      margin-top: 40px;}
+.title img {width: 10%;}
+
+.box{width: 100px;}
+    #skill{width: 60%;height: 250px;background: transparent;}
+    .second {position: relative;width: 250px;text-align: center;}
+    .second>strong{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);font-size: 3rem;}
+    #skill p {text-align: center;margin: 20px auto;padding-left: 90px!important;
+      font-size: 1.2rem;font-weight: bold;font-family: 'NGothic';}
+   #skill p:nth-child(2) {text-align: center;margin: 20px auto;
+    margin-left: 160px!important;font-size: 1.2rem;font-weight: bold;font-family: 'NGothic';}
+    .animated {animation-duration: 2s;animation-fill-mode: both;}
+    .fadeIn {animation-name: fadeIn;}
+    .wp2,.wp1 {display:inline-block;width: 20%;}
+  .css3 { margin-left: 10px!important;}
+  .java {padding-right: 10px!important;}
+
+
+
+    @keyframes fadeIn{
+      0%{opacity: 0;}
+      100%{opacity: 1;}
+    }
+    .selected {color: #FFC700!important;font-size: 1.3rem;font-weight: bold;}
+
+    .wp2{visibility: hidden;}
+    .fadeIn{visibility: visible;}
+
+    #skill span {text-align: center;margin-left: 50px;}
+
+
+    .detail {width: 80%;margin:0 auto; text-align: center;
+            margin-top: 140px;}
+    .detail img {width: 12%;}
+
+    strong {font-size: 1.3rem!important;}
+    #container {width: 70%;margin: 50px auto;text-align: center;}
+    

@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+*,*:after,*:before {box-sizing: border-box;}
+a {text-decoration: none;}
+body {background-color: #fff;}
+
+.first {width: 100%;}
+
+.sec {position: absolute; top: 4120px; left: 500px;}
+.sec img {width: 100%;}
+.sec1 {position: absolute; top: 4120px; right: 500px;}
+.sec1 img {width: 100%;}

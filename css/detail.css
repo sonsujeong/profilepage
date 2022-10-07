@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+*,*:after,*:before {box-sizing: border-box;}
+a {text-decoration: none;}
+body {background-color: #fff;}
+#header {width: 100%; text-align: center;}
+#header h1 {font-family: 'NGothic'; font-size: 1.8rem;
+       margin: 40px auto; color: #FFC090;}
+#container{	width:100%;margin: 10px auto;  }
+.tab {width: 100%;display: flex;}
+.tab li{ list-style:none;width:25%;}
+.tab li a{
+/*outline:none; 사이트에서 링크 또는 이미지 클릭시 점선이 표시 제거->
+	border 달리 전체의 폭과 높이에 영향을주지 않고  border 바깥쪽에
+	그려지는 라인*/color: #495C83;
+	background:#fff;	display:block;	
+	line-height:40px;text-align:center;  }
+ul.tab li a.selected{
+	background:url("../img/select.png");
+	text-decoration:none; color:#000;cursor:default;
+	font-weight: bold; border-bottom: 4px solid #7FBCD2; }
+
+
+#tab1 {width: 100%;margin: 0 auto;text-align: center;}
+
+.info img {vertical-align: bottom!important;width: 100%;}
+
+ #tab2 {width: 100%;margin: 0 auto;text-align: center;}
+#tab2 img {width: 100%;}
+
+#tab3 {width: 100%;}
+#tab3 img {width: 100%;}
+
+#tab4 img {width: 100%;}
+

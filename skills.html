@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">  <!--항상 리셋 css파일이 가장 위에 링크되어 있어야함-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/skills_01 copy.css">
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    
+
+<script>
+ $(function(){
+  $("#menu ul li a").click(function(){
+          $("#menu ul li a").removeClass();
+          $(this).addClass("selected");
+        }); 
+        
+  
+       
+ });
+</script>
+</head>
+<body>
+<header id="header">
+    <nav id="menu">    
+      <h1><a href="profilepage.html"><img src="profile/logo.png" alt="logo image"></a></h1>
+    <ul class="menu cf">
+        <li><a href="about.html" >About me</a></li>
+        <li><a href="skills.html" class="selected">My Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <div class="title">
+    <img src="profile/MY SKILLS.png" alt="my skills">
+  </div>
+<div id="container">
+<div class="wp2">
+  <div id="skill">
+    <p>HTML5</p>
+    <div class="second circle">
+      <strong></strong>
+    </div>
+  </div>
+</div>
+
+<div class="wp1">
+  <div id="skill">
+    <p class="css3">CSS3</p>
+    <div class="second circle1">
+      <strong></strong>
+    </div>
+    
+  </div>
+</div>
+
+<div class="wp1">
+  <div id="skill">
+    <p>JQuery</p>
+    <div class="second circle2">
+      <strong></strong>
+    </div>
+    
+  </div>
+</div>
+
+<div class="wp1">
+  <div id="skill">
+    <p class="java">Javascript</p>
+    <div class="second circle3">
+      <strong></strong>
+    </div>
+    
+  </div>
+</div>
+
+<div class="wp2">
+  <div id="skill">
+    <p class="photo">Photoshop</p>
+    <div class="second circle4">
+      <strong></strong>
+    </div>
+  </div>
+</div>
+
+<div class="wp1">
+  <div id="skill">
+    <p class="illu">Illustrator</p>
+    <div class="second circle5">
+      <strong></strong>
+    </div>
+    
+  </div>
+</div>
+
+<div class="wp1">
+  <div id="skill">
+    <p>Figma</p>
+    <div class="second circle6">
+      <strong></strong>
+    </div>
+    
+  </div>
+</div>
+
+<div class="wp1">
+  <div id="skill">
+    <p>Php</p>
+    <div class="second circle7">
+      <strong></strong>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+<div class="detail">
+  <h2><img src="profile/Skill Detailes.png" alt="detailes"></h2> 
+</div>
+
+<div id="transcroller-body" class="aos-all">
+  <div class="aos-item left code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/html5.png" alt="1"></div>
+  </div>
+
+  <div class="aos-item right code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/css3.png" alt="2"></div>
+  </div>
+
+  <div class="aos-item left code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/jquery01.png" alt="3"></div>
+  </div>
+
+  <div class="aos-item right code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/js.png" alt="4"></div>
+  </div>
+
+  <div class="aos-item left code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/graphic.png" alt="5"></div>
+  </div>
+
+  <div class="aos-item right code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/figma.png" alt="6"></div>
+  </div>
+
+  <div class="aos-item right code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/php.png" alt="7"></div>
+  </div>
+
+  <div class="aos-item right code" data-aos="fade-up">
+    <div class="aos-item_inner"><img src="profile/mysql.png" alt="8"></div>
+  </div>
+  
+</div>
+
+
+
+  <script src="js/aos.js"></script>
+
+<script>
+  AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+
+</script>
+<script src="js/skills_01circle copy.js"></script>
+</body>
+</html>

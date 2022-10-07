@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed headers - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript" src="js/pop.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#EE6983', '#7895B2', '#B1D7B4'],
+				css3: true
+			});
+		});
+	</script>
+
+	<script>
+		$(function(){
+			$("#menu ul li a").click(function(){
+          $("#menu ul li a").removeClass();
+          $(this).addClass("selected");
+        }); 
+		});
+	</script>
+
+    <style>
+		.mock {width: 20%;}
+	</style>
+</head>
+<body>
+
+
+
+	<header id="header">
+		<nav id="menu">    
+		  <h1><a href="profilepage.html"><img src="profile/logo.png" alt="logo image"></a></h1>
+		<ul class="menu cf">
+			<li><a href="about.html">About me</a></li>
+			<li><a href="skills.html">My Skills</a></li>
+			<li><a href="portfolio.html" class="selected">Portfolio</a></li>
+		</ul>
+	  </nav>
+	  </header>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="intro">
+			<h1>My Portfolio</h1>
+			<p>I created three portfolios. Please scroll</p>
+			<div class="scroll">
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro port1">
+				<h1 class="one">SIDMOOL MOBILE SITE RENEWAL</h1>
+				<a href="http://mse0728.dothome.co.kr/mobile_ssj/mobilemain.html" target="_blank" onclick="winOpen()";><img src="profile/port1.jpg" alt="sidmool"></a>
+				<p>Click on the picture to go to the appropriate homepage<br>
+					사진을 클릭하시면 포트폴리오 홈페이지로 이동합니다</p>
+				<a href="sidmool.html" class="mock" target="_blank"><img src="profile/detailes.png" alt="details"></a>
+			</div>
+		</div>
+
+	    <div class="slide port2" id="slide2">
+			<h1 class="two">STARSHIP ENT Responsive Web Site RENEWAL</h1>
+			<a href="http://mse2211.dothome.co.kr/rwd_ssj/rwd_mobile.html" target="_blank"><img src="profile/tablet.jpg" alt="starship"></a>
+			<a href="new.html" class="mock" target="_blank"><img src="profile/detailes.png" alt="details"></a>
+		</div>
+
+		<div class="slide port3" id="slide3">
+			<h1>Smoothieking Responsive Web Site RENEWAL</h1>
+			<a href="http://mse1122.dothome.co.kr/smoothieking_ssj/main.html" target="_blank"><img src="profile/smootie.jpg" alt="smoothieking" class="img3"></a>
+			<a href="smoothie.html" class="mock" target="_blank"><img src="profile/detailes.png" alt="details"></a>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Thank you for watching!</h1>
+		
+		</div>
+	</div>
+
+	
+</div>
+
+
+</body>
+</html>
